@@ -1,2 +1,2 @@
-# A Game That I made.
+# My Repo
 ## Have Fun
