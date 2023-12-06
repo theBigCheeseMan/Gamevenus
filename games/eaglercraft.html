@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <iframe id="game" src="https://sd592g.github.io/zj684od4lfg/" width="600px" height="600px"></iframe>
+
+        <button id="expand"></button>
+        <script>
+            import { requestFullScreen, CancelFullScreen } from "../FULLSCREEN.js"
+            function initFull() {requestFullScreen(document.getElementById("game"))}
+            document.getElementById("expand").onclick = "initFull()"
+        </script>
+        
+    </body>
+</html>
