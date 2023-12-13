@@ -6,7 +6,7 @@
         <button id="expand"></button>
         <script type="module">
             import { requestFullScreen, cancelFullScreen } from "../FULLSCREEN.js"
-            function initFull() {requestFullScreen(document.getElementById("game"))}
+            function initFull() {requestFullScreen(document.getElementById("game")); console.log("Hi")}
             document.getElementById("expand").onclick = "initFull()"
         </script>
         
