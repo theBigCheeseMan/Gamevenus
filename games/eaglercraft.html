@@ -7,7 +7,10 @@
         <script type="module">
             import { requestFullScreen, cancelFullScreen } from "../FULLSCREEN.js"
             function initFull() {requestFullScreen(document.getElementById("game")); console.log("Hi")}
-            document.getElementById("expand").onclick = "initFull()"
+            var EXPAND = document.getElementById("expand");
+            EXPAND.addEventListener("mousedown", (e)=>{
+                initFull();
+            })
         </script>
         
     </body>
