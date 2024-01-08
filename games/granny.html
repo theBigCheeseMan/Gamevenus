@@ -1,0 +1,17 @@
+
+<html>
+    <body>
+        <iframe id="game" src="https://sz-games.github.io/Games8/GRANNY" width="600px" height="600px"></iframe>
+
+        <button id="expand">Fullscreen</button>
+        <script type="module">
+            import { requestFullScreen, cancelFullScreen } from "../FULLSCREEN.js"
+            function initFull() {requestFullScreen(document.getElementById("game"))}
+            var EXPAND = document.getElementById("expand");
+            EXPAND.addEventListener("mousedown", (e)=>{
+                initFull();
+            })
+        </script>
+        
+    </body>
+</html>
